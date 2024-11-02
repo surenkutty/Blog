@@ -18,7 +18,7 @@ mongoose.connect('mongodb://localhost:27017/blog')
 
 //use routes
 
-api.use('/api/posts',postRoutes)
+app.use('/api/posts',postRoutes)
 app.listen(PORT,()=>console.log(`The Server is Starting at localhost:${PORT}`));
 
  
