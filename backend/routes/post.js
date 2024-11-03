@@ -4,7 +4,7 @@ const Post=require('../models/Post');
 
 router.get('/',async(req,res)=>{
     try{
-        const posts=Post.find();
+        const posts=await Post.find();
         res.json(posts);
 
     }catch(error){
