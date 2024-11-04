@@ -4,7 +4,7 @@ const categorySchema=new mongoose.Schema({
     slug:{type:String,required:true,unique:true},
     description:{type:String,required:false},
 },{
-    timeStamps:true
+    timestamp:true
 });
 
-module.exports=mongoose.model('category',categorySchema)
+module.exports=mongoose.model('Category',categorySchema)

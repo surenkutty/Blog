@@ -6,7 +6,7 @@ function Post({post}) {
     <div className="card mb-4">
             <div className="row">
                 <div className="col-sm-12 col-md-3">
-                    <img className="img-fluid h-100 w-100 card-img-top" src={post.image}
+                    <img className="img-fluid h-100 card-img-top" src={post.image}
                         alt="..." />
                 </div>
                 <div className="card-body col-md-8">

@@ -52,7 +52,7 @@ router.post('/',async(req,res)=>{
 //update
 router.put('/:id',async(req,res)=>{
     try{
-        const category=await Category.findByIdAndUpdate(req.params.id);
+        const category=await Category.findById(req.params.id);
         if(!category){
             return res.status(404).json({message:"Post Not found"})
         }
